@@ -1,0 +1,6 @@
+google-ads.yaml
+google-ads-client-secrets.json
+*.pyc
+__pycache__/
+.DS_Store
+.env

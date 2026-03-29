@@ -1,10 +1,15 @@
 # gads.py
 
-Single-file Python module for managing Google Ads campaigns via the API. No framework, no boilerplate - just `import gads` and go.
+**50 lines of protobuf hell to create one campaign. Or one line.**
 
-## Why
+```python
+gads.create_search_campaign('Summer Sale', budget_thb=500)
+# {'ok': True, 'campaign_id': '123456789'}
+```
 
-The official Google Ads Python client library is powerful but verbose. Creating a simple search campaign requires ~50 lines of protobuf wrangling. `gads.py` wraps all of that into clean one-liner functions that return plain dicts.
+That's it. One file. No framework. No class inheritance. No protobuf surgery.
+
+`gads.py` is a single Python file that wraps the entire Google Ads API into functions that take normal arguments and return plain dicts. Drop it in your project and start managing campaigns in seconds - not hours.
 
 ## Requirements
 

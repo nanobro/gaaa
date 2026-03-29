@@ -1,15 +1,21 @@
-# gads.py
+# GAAA - Google Ads AI Agents
 
-**50 lines of protobuf hell to create one campaign. Or one line.**
+**Your AI agent just learned Google Ads.**
 
 ```python
+# What your AI agent sees:
 gads.create_search_campaign('Summer Sale', budget_thb=500)
 # {'ok': True, 'campaign_id': '123456789'}
 ```
 
-That's it. One file. No framework. No class inheritance. No protobuf surgery.
+```python
+# What Google wants you to write:
+# 50+ lines of protobuf, enums, field masks, resource names, micros conversion...
+```
 
-`gads.py` is a single Python file that wraps the entire Google Ads API into functions that take normal arguments and return plain dicts. Drop it in your project and start managing campaigns in seconds - not hours.
+One file. Zero dependencies beyond `google-ads`. Plain dict in, plain dict out - exactly what LLMs and AI agents need.
+
+GAAA (`gads.py`) turns the entire Google Ads API into simple function calls that any AI agent - Claude, GPT, or your custom automation - can use to create campaigns, manage bids, add keywords, and pull reports. Drop it in, `import gads`, done.
 
 ## Requirements
 
